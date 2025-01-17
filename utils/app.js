@@ -66,5 +66,4 @@ function renderGameState() {
         challengeButton.onclick = () => handlePlayerAction("challenge");
         gameContainer.appendChild(challengeButton);
     }
-  }
 }
