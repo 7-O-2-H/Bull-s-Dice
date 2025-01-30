@@ -41,4 +41,13 @@ export function shuffleArray(array) {
 // Rolls a single die (returns a number between 1 and 6)
 export function rollDie() {
   return generateRandomNumber(1, 6);
+};
+
+// Rolls a specific number of dice and returns an array of results
+export function rollDice(count) {
+  const results = [];
+  for (let i = 0; i < count; i++) {
+      results.push(rollDie());
+  }
+  return results;
 }
