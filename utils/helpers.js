@@ -50,4 +50,4 @@ export function rollDice(count) {
       results.push(rollDie());
   }
   return results;
-}
+};
