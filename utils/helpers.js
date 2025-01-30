@@ -51,3 +51,8 @@ export function rollDice(count) {
   }
   return results;
 };
+
+// Utility to deep clone an object or array
+export function deepClone(obj) {
+  return JSON.parse(JSON.stringify(obj));
+};
