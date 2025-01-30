@@ -37,3 +37,8 @@ export function shuffleArray(array) {
   }
   return array;
 };
+
+// Rolls a single die (returns a number between 1 and 6)
+export function rollDie() {
+  return generateRandomNumber(1, 6);
+}
