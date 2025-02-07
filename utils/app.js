@@ -66,7 +66,7 @@ function renderGameState() {
         challengeButton.onclick = () => handlePlayerAction("challenge");
         gameContainer.appendChild(challengeButton);
     }
-}
+};
 
 // Handle Player Actions
 function handlePlayerAction(action) {
@@ -78,4 +78,4 @@ function handlePlayerAction(action) {
     game.takeTurn("challenge");
   }
   renderGameState();
-}
+};
