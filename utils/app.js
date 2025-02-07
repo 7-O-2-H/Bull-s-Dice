@@ -67,3 +67,15 @@ function renderGameState() {
         gameContainer.appendChild(challengeButton);
     }
 }
+
+// Handle Player Actions
+function handlePlayerAction(action) {
+  if (action === "bid") {
+    const quality = prompt("Enter quantity: ");
+    const face = prompt("Enter face value: ");
+    game.takeTurn("bid", {quantity: parseInt(quantity, 10), face: parseInt(face, 10)})
+  } else if (action === "challenge") {
+    game.takeTurn("challenge");
+  }
+  renderGameState();
+}
